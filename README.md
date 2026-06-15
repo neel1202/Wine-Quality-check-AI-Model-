@@ -1,34 +1,154 @@
-# Wine-Quality-check-AI-Model-
-Wine Quality Analysis
-Overview
-This repository contains an analysis of the Wine Quality Dataset, which includes physicochemical properties of red and white wines and their quality ratings. The dataset is commonly used for predictive modeling and exploratory data analysis in machine learning.
-The main goal is to understand which features influence wine quality and to build machine learning models that can predict wine quality scores or classify wines into quality categories.
+# 🍷 Wine Quality Prediction using Machine Learning
 
-Dataset
-The dataset consists of the following:
-Features (Physicochemical properties):
-Fixed acidity, volatile acidity, citric acid
-Residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide
-Density, pH, sulphates, alcohol
-Target Variable: quality (integer score between 0–10)
+Predict wine quality based on physicochemical properties using Machine Learning models and data analysis techniques.
 
-Variants:
-Red wine: winequality-red.csv
-White wine: winequality-white.csv
+---
 
-Objectives
-Perform Exploratory Data Analysis (EDA) to find patterns, correlations, and outliers
-Visualize data distributions and relationships between features and quality
-Preprocess data for machine learning
+## 📖 Overview
 
-Build regression models to predict exact wine quality scores
-Build classification models to categorize wines into quality levels (low, medium, high)
-Evaluate model performance using appropriate metrics (RMSE, accuracy, F1-score, etc.)
+Wine quality is influenced by several chemical properties such as acidity, alcohol content, pH, sulphates, and density. This project analyzes these features and builds machine learning models to predict wine quality.
 
-Tools & Libraries
-Python 3.x
-Data Manipulation: Pandas, NumPy
+### Objectives
 
-Visualization: Matplotlib, Seaborn
+* Perform Exploratory Data Analysis (EDA)
+* Visualize feature relationships
+* Build and compare ML models
+* Predict wine quality scores
+* Identify the most influential features
 
-Machine Learning: Scikit-learn in detauls readme 
+---
+
+## 📊 Dataset
+
+The project uses the Wine Quality Dataset from the UCI Machine Learning Repository.
+
+### Features
+
+| Feature              | Description                        |
+| -------------------- | ---------------------------------- |
+| Fixed Acidity        | Non-volatile acids                 |
+| Volatile Acidity     | Acetic acid concentration          |
+| Citric Acid          | Citric acid content                |
+| Residual Sugar       | Remaining sugar after fermentation |
+| Chlorides            | Salt concentration                 |
+| Free Sulfur Dioxide  | Free SO₂                           |
+| Total Sulfur Dioxide | Total SO₂                          |
+| Density              | Wine density                       |
+| pH                   | Acidity level                      |
+| Sulphates            | Sulphate concentration             |
+| Alcohol              | Alcohol percentage                 |
+
+**Target:** Quality Score (0–10)
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+* Jupyter Notebook
+
+---
+
+## 🔄 Workflow
+
+```text
+Data Collection
+      ↓
+Data Cleaning
+      ↓
+EDA
+      ↓
+Feature Engineering
+      ↓
+Train/Test Split
+      ↓
+Model Training
+      ↓
+Evaluation
+```
+
+---
+
+## 📈 Exploratory Data Analysis
+
+### Quality Distribution
+
+![Quality Distribution](images/quality_distribution.png)
+
+### Correlation Heatmap
+
+![Heatmap](images/heatmap.png)
+
+### Feature Analysis
+
+![Feature Analysis](images/feature_analysis.png)
+
+---
+
+## 🤖 Models Used
+
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* Support Vector Machine (SVM)
+* K-Nearest Neighbors (KNN)
+
+---
+
+## 📊 Results
+
+| Model               | Accuracy |
+| ------------------- | -------- |
+| Logistic Regression | XX%      |
+| Decision Tree       | XX%      |
+| Random Forest       | XX%      |
+| SVM                 | XX%      |
+
+> Replace XX with your actual results.
+
+---
+
+## 🔍 Key Findings
+
+* Alcohol content positively impacts wine quality.
+* Volatile acidity negatively affects quality.
+* Sulphates show a positive correlation with quality.
+* Random Forest produced the best overall performance.
+
+---
+
+## 📁 Project Structure
+
+```text
+Wine-Quality-check-AI-Model/
+│
+├── data/
+├── notebooks/
+├── images/
+├── models/
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/neel1202/Wine-Quality-check-AI-Model-.git
+cd Wine-Quality-check-AI-Model-
+pip install -r requirements.txt
+```
+
+---
+
+## 👨‍💻 Author
+
+Neel Shah
+
+If you found this project useful, give it a ⭐ on GitHub.
